@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Setting</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <style>
+        .btn-pers {
+            background-color: #4d4949;
+        }
+
+        .freccia {
+            top: 45px;
+            right: 25px;
+            color: white;
+        }
+
+        .noround {
+            border-radius: 0;
+        }
+
+        .edit {
+            bottom: 5px;
+            left: 20px;
+            padding: 2PX 5PX;
+            box-shadow: 2px 2px 1px 1px #878383;
+        }
+
+        .profile {
+            height: 100px;
+        }
+
+        .netflixlogo {
+            height: 45px;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <nav class="navbar bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/netflix_logo.png" alt="netflix_logo" class="netflixlogo rounded">
+            </a>
+        </div>
+    </nav>
+    <div class="container-fluid bg-black py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-light text-center mb-4">Edit Profile</h1>
+                </div>
+                <div class="row w-md-75 mx-auto border-bottom border-top py-3 border-secondary ">
+                    <div class="col-6 text-end">
+                        <button type="button" class="btn p-0 position-relative">
+                            <img src="/assets/avatar.png" alt="profile" class="profile">
+                            <span
+                                class="position-absolute edit translate-middle bg-black text-light border-light rounded-circle">
+                                <span><i class="bi bi-pen-fill"></i></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col col-md-10">
+                                <p class="text-bg-secondary p-2 ps-3">Strive Student</p>
+                            </div>
+                        </div>
+                        <div class="row pb-3">
+                            <div class="col col-md-8 col-lg-6 position-relative">
+                                <p class="text-secondary">Language :</p>
+                                <select class="form-select bg-black text-light noround ria-label=" Default select
+                                    example">
+                                    <option selected>English</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <div class="position-absolute freccia"><i class="bi bi-chevron-compact-down"></i></div>
+                            </div>
+                        </div>
+                        <div class="row border-top  border-secondary py-4">
+                            <div class="col">
+                                <p class="text-secondary h5">Maturity Settings:</p>
+                                <button type="button" class="btn small noround btn-pers p-2 text-light fw-semibold">ALL
+                                    MATURITY RATINGS </button>
+                                <p class="mt-2 text-secondary">Show title of <strong>all maturity ratings</strong> for
+                                    this profile</p>
+                                <button type="button" class="btn btn-outline-secondary noround px-3">Edit</button>
+                            </div>
+                        </div>
+                        <div class="row border-top  border-secondary py-4">
+                            <div class="col-12">
+                                <p class="text-secondary h5">Autoplay controls</p>
+                                <input class="form-check-input rounded-0 bg-black border-secondary text-secondary" type="checkbox" value="b" id="flexCheckDefault">
+                                <label class="form-check-label text-secondary small" for="flexCheckDefault">
+                                    Autoplay next Episode in a series on all devices
+                                </label>
+<br>
+                                <input class="form-check-input rounded-0 border-secondary bg-black text-secondary" type="checkbox" value="b" id="flexCheckDefault" >
+                                <label class="form-check-label text-secondary small" for="flexCheckDefault">
+                                    Autoplay previews while browsing on all device
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="row pt-3 pb-5">
+            <div class="col-12 text-center bg-black pb-0"><button type="button" class="btn btn-light me-3 px-4 noround">Save</button>
+                <button type="button" class="btn btn-outline-secondary me-3 px-4 noround">Cancel</button>
+                <button type="button" class="btn btn-outline-secondary me-3 px-4 noround">Delete Profile</button>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
